@@ -1,0 +1,115 @@
+DAY 2: BASIC PROBABILITY
+
+OBJECTIVE
+
+In this challenge, we practice calculating probability. Check out the Tutorial tab 
+for a breakdown of probability fundamentals!
+
+TASK
+
+In a single toss of 2 fair (evenly-weighted) six-sided dice, find the probability 
+that their sum will be at most 9.
+
+Soln 
+Sample space of 2 fair six sided dice 
+
+                    = (1,1) (1,2) (1,3) (1,4) (1,5) (1,6)
+                      (2,1) (2,2) (2,3) (2,4) (2,5) (2,6) 
+                      (3,1) (3,2) (3,3) (3,4) (3,5) (3,6) 
+                      (4,1) (4,2) (4,3) (4,4) (4,5) (4,6) 
+                      (5,1) (5,2) (5,3) (5,4) (5,5) (5,6)
+                      (6,1) (6,2) (6,3) (6,4) (6,5) (6,6)
+
+                      n(s) = 36
+
+                      probability = Expected / All
+
+
+There are 6 cases where sum >= 10: (4,6), (5,5), (5,6), (6,4), (6,5), (6,6)
+
+This gives us probability(sum >= 10) = 6/36 = 1/6
+
+That means probability(sum <= 9) = 1 - 1/6 = 5/6
+
+Final Answer = 5/6
+
+
+DAY 2: MORE DICE
+
+OBJECTIVE
+
+In this challenge, we practice calculating probability. We recommend you review the 
+previous challenge's Tutorial before attempting this problem.
+
+
+TASK
+
+In a single toss of 2 fair (evenly-weighted) six-sided dice, find the probability that
+the values rolled by each die will be different and the two dice have a sum of 6.
+
+Soln : 
+
+Sample space of 2 fair six sided dice 
+
+                    = (1,1) (1,2) (1,3) (1,4) (1,5) (1,6)
+                      (2,1) (2,2) (2,3) (2,4) (2,5) (2,6) 
+                      (3,1) (3,2) (3,3) (3,4) (3,5) (3,6) 
+                      (4,1) (4,2) (4,3) (4,4) (4,5) (4,6) 
+                      (5,1) (5,2) (5,3) (5,4) (5,5) (5,6)
+                      (6,1) (6,2) (6,3) (6,4) (6,5) (6,6)
+
+                      n(s) = 36
+
+                      probability = Expected / All
+
+
+There are 4 cases where values rolled by each die is different and sum = 6 : (1,5), (2,4), (4,2), (5,1)
+
+This gives us probability = 4/36 = 1/9
+
+Final Answer = 5/6
+
+
+DAY 2: COMPOUND EVENT PROBABILITY
+
+OBJECTIVE
+
+In this challenge, we practice calculating the probability of a compound event. 
+We recommend you review today's Probability Tutorial before attempting this challenge.
+
+
+TASK
+
+There are 3 urns labeled X ,Y ,and Z.
+
+
+Urn X contains 4 red balls and 3 black balls.
+Urn Y contains 5 red balls and 4 black balls.
+Urn Z contains 4 red balls and 4 black balls.
+
+One ball is drawn from each of the 3 urns. What is the probability that, of the 3 balls 
+drawn, 2 are red and 1 is black?
+
+Soln : 
+       Urn X = (4R + 3B) = 7
+       Urn y = (5R + 4B) = 9 
+       Urn z = (4R + 4B) = 8
+
+First = X - Red, Y - Red, Z - Black
+Second = X - Black, Y - Red, Z - Red
+Third = X - Red, B - Black, Z - Red  
+
+Combinations 
+
+P(RRB) = P(R) * P(R) * P(B)
+       = 4/7  * 5/9 * 4/8    = 80/504
+
+P(BRR) = P(B) * P(R) * P(R) 
+       = 3/7  * 5/9  * 4/8   = 60/504
+
+P(RBR) = P(R) * P(B) * P(R)   
+       = 4/7  * 4/9  * 4/8   = 64/504
+
+P(1B2R) = 80/504 + 60/504 + 64/504  = 17/42       
+
+FInal Answer = 17/42

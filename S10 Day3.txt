@@ -1,0 +1,78 @@
+Day 3: Conditional Probability
+
+Objective
+
+In this challenge, we get started with conditional probability. Check out the Tutorial tab for learning materials!
+
+
+Task
+
+Suppose a family has 2 children, one of which is a boy. What is the probability that both children are boys?
+
+Soln : 
+
+Let's write the sample space:
+
+BB, BG, GB, GG
+
+But we know that one child is a boy, so that means that GG isn't a possibility. Thus, the sample space is reduced to: BB, BG, GB.
+
+Therefore, the probability of both children being boys given that one is a boy is 1/3.
+
+Final Answer = 1/3
+
+
+Day 3: Cards of the Same Suit
+
+Objective
+
+In this challenge, we're getting started with combinations and permutations. Check out the Tutorial tab for learning materials!
+
+
+Task
+
+You draw 2 cards from a standard 52-card deck without replacing them. What is the probability that both cards are of the same suit?
+
+Soln : 
+
+We have 4 suits.
+
+Logically, After the first draw, regardless of what card we draw the probability remain same for the second draw. 
+There are four colors and as which color of card is chosen is not provided. It can be any color card.
+
+So, For first draw, Probability of choosing a card is 1.
+
+For second draw, probability of choosing a color card is 13/52.
+
+But, we have not inserted the card back. So, the probability is: 12/51.
+
+Final Answer: 12/51
+
+
+Day 3: Drawing Marbles
+
+Objective
+
+In this challenge, we're reinforcing what we've learned today. In case you've missed them, today's tutorials are on 
+Conditional Probability and Combinations and Permutations.
+
+Task
+
+A bag contains 3 red marbles and 4 blue marbles. Then, 2 marbles are drawn from the bag, at random, without replacement. 
+If the first marble drawn is red, what is the probability that the second marble is blue?
+
+Soln : Number of red marbles = 3
+Number of blue marbles = 4
+Total number of marbles = 3+4 = 7
+When first marble is taken out ,
+
+Total number of marbles = 7-1=6
+Number of red marbles = 3-1 = 2
+Number of blue marbles = 4
+
+
+Probability of second marble to be blue = Number of blue marbles / Number of marbles left
+
+= 4/6
+
+= 2/3
